@@ -1,0 +1,211 @@
+.about__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__right-title {
+    width: 305px;
+}
+
+.skills__category {
+    @include phone {
+        text-align: center;
+    }
+}
+
+.about__right-title .block-title-subtitle {
+    align-self: center;
+    text-align: center;
+    display: flex;
+}
+
+.block-title_skills:before {
+    margin-top: 28px;
+}
+
+.block-title_skills:after {
+    margin-top: 28px;
+}
+
+.about__right-text {
+    padding: 2px 19px;
+    margin-bottom: 50px;
+    color: #728185;
+}
+
+.text-content {
+    margin: 0;
+}
+
+.skills__category_title {
+    font-family: 'robotomedium';
+    font-size: 28px;
+    color: #455a64;
+    padding-left: 39px;
+    @include tablet {
+        text-align: center;
+    }
+}
+
+.skills_circles {
+    @include tablet {
+        text-align: center;
+    }
+    @include phone {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.skills__category {
+    margin-bottom: 15px;
+} // круги:
+.circles {
+    fill: none;
+    stroke-width: 24;
+}
+
+.circle__first {
+    stroke: #dfdcd5;
+}
+
+.circle__second {
+    stroke: #1bb696;
+    stroke-dasharray: .0010 282.6;
+    transition: all 1s;
+}
+
+.skills_item {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    @include phone {
+        height: 105px;
+        margin: 0 28px;
+    }
+}
+
+.item__title {
+    font-family: 'robotomedium';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 12px;
+    color: #1bb696;
+}
+
+.circle-0 {
+    stroke-dasharray: .001 282.6;
+    transition: 1s;
+}
+
+.circle-5 {
+    stroke-dasharray: 14.13 282.6;
+    transition: 1s;
+}
+
+.circle-10 {
+    stroke-dasharray: 28.26 282.6;
+    transition: 1s;
+}
+
+.circle-15 {
+    stroke-dasharray: 42.39 282.6;
+    transition: 1s;
+}
+
+.circle-20 {
+    stroke-dasharray: 56.52 282.6;
+    transition: 1s;
+}
+
+.circle-25 {
+    stroke-dasharray: 70.65 282.6;
+    transition: 1s;
+}
+
+.circle-30 {
+    stroke-dasharray: 84.78 282.6;
+    transition: 1s;
+}
+
+.circle-35 {
+    stroke-dasharray: 98.91 282.6;
+    transition: 1s;
+}
+
+.circle-40 {
+    stroke-dasharray: 113.04 282.6;
+    transition: 1s;
+}
+
+.circle-45 {
+    stroke-dasharray: 127.17 282.6;
+    transition: 1s;
+}
+
+.circle-50 {
+    stroke-dasharray: 141.3 282.6;
+    transition: 1s;
+}
+
+.circle-55 {
+    stroke-dasharray: 155.43 282.6;
+    transition: 1s;
+}
+
+.circle-60 {
+    stroke-dasharray: 169.56 282.6;
+    transition: 1s;
+}
+
+.circle-65 {
+    stroke-dasharray: 183.69 282.6;
+    transition: 1s;
+}
+
+.circle-70 {
+    stroke-dasharray: 197.82 282.6;
+    transition: 1s;
+}
+
+.circle-75 {
+    stroke-dasharray: 211.95 282.6;
+    transition: 1s;
+}
+
+.circle-80 {
+    stroke-dasharray: 226.08 282.6;
+    transition: 1s;
+}
+
+.circle-85 {
+    stroke-dasharray: 240.21 282.6;
+    transition: 1s;
+}
+
+.circle-90 {
+    stroke-dasharray: 254.34 282.6;
+    transition: 1s;
+}
+
+.circle-95 {
+    stroke-dasharray: 268.47 282.6;
+    transition: 1s;
+}
+
+.circle-100 {
+    stroke-dasharray: 282.6 282.6;
+    transition: 1s;
+}
+
+.skills_item {
+    padding: 15px 22px;
+    @include phone {
+        padding: 15px 0;
+    }
+}

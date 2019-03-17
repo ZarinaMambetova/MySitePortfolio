@@ -1,0 +1,162 @@
+.hero_blog {
+    background: url(../images/bg/blog_header.png) 50% 50% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: grid;
+    grid-area: hero_blog;
+}
+
+.blog__footer {
+    position: initial;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.triangles__blog {
+    grid-area: hero_blog;
+}
+
+.triangles__blog .triangle__left {
+    fill: #ffffff;
+}
+
+.triangles__blog .triangle__right {
+    fill: #ffffff;
+}
+
+.hero_info_blog {
+    padding: 0;
+}
+
+.name__title_blog {
+    font-family: 'bernier_regularregular';
+    font-size: 63px;
+    color: #ffffff;
+}
+
+.hero_info {
+    z-index: 500;
+}
+
+.hero_info_blog {
+    margin-top: -58px;
+}
+
+.hero_info_blog .greeting__photo {
+    margin-bottom: 16px;
+}
+
+.main_blog {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 400px 100%;
+    grid-template-areas: "hero_blog hero_blog" "sidebar articles";
+    position: relative;
+    @include tablet {
+        grid-template-rows: 560px 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "hero_blog" "articles";
+    }
+    @include phone {
+        grid-template-rows: 560px 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "hero_blog" "articles";
+    }
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 64px 0 0 40px;
+    width: 277px;
+    transition: all 0.3s ease;
+    &.fixed {
+        position: fixed
+    }
+    @include phone {
+        display: none;
+    }
+}
+
+.sidebar_list {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.sidebar__link {
+    text-decoration: none;
+    color: #455a64;
+   
+    &:hover {
+        font-family: 'robotobold';
+        color: #00bfa5;
+        transition: 0.5s;
+    }
+    &.active {
+        font-family: 'robotobold';
+        color: #00bfa5;
+        transition: 0.5s;
+        // border-right: 3px solid #00bfa5;
+        padding: 20px;
+    }
+}
+
+
+.sidebar_item {
+    margin-bottom: 40px;
+    padding-right: 15px;
+    &:hover {
+        border-right: 3px solid #00bfa5;
+    }
+    &.border {
+        border-right: 3px solid #00bfa5;
+    }
+}
+
+.active .sidebar__link {
+    text-decoration: none;
+    color: #455a64;
+    &:hover {
+        font-family: 'robotobold';
+        color: #00bfa5;
+        transition: 0.5s;
+            }
+            
+}
+
+.entries {
+    grid-area: articles;
+    padding: 61px 123px 0 124px;
+    @include tablet {
+        padding: 61px 34px 0 54px;
+    }
+    @include phone {
+        padding: 70px 15px 70px 18px;
+    }
+}
+
+.entry__date {
+    color: #7cded1;
+    margin: 30px 0;
+}
+
+.entries__item {
+    margin-bottom: 65px;
+    border-bottom: 5px solid #f1f1f2;
+}
+
+.entry__text {
+    margin-bottom: 70px;
+    line-height: 1.7;
+}
+
+.entry__title {
+    font-family: 'bernier_regularregular';
+    font-size: 35px;
+    color: #455a64;
+}

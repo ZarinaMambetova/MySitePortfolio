@@ -1,0 +1,17 @@
+.blure {
+    position: relative;
+    height: 440px;
+    width: 380px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.blure_bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg/bg-water.png);
+    filter: blur(20px);
+    
+}

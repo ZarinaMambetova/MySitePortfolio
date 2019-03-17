@@ -1,0 +1,67 @@
+            .hero-head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section_hero {
+            background: url(../images/bg/about.png);
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            position: relative;
+            display: grid;
+            grid-area: hero;
+        }
+
+        .user-description__text {
+            margin-bottom: 42px;
+        }
+
+        .arrow-scroll_info {
+            margin-bottom: 43px;
+        }
+
+        .hero_info {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .name__title_hero {
+            color: #fff;
+            font-size: 35px;
+            @include phone {
+                font-size: 21px;
+            }
+        }
+        
+            .hero__profession {
+                color: #fff;
+                opacity: 0.8;
+            }
+            .arrow-scroll {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .arrow-scroll_info {
+                z-index: 800;
+                @include tablet {
+                    bottom: 1.57143rem;
+                }
+                @include phone {
+                    bottom: rem(25);
+                }
+            }
+
+            .triangles {
+                width: 100%;
+                z-index: 50;
+                margin-bottom: -2px;
+            }

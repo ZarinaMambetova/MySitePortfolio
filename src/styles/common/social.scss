@@ -1,0 +1,27 @@
+    .link_icon {
+        fill: #ffffff;
+        height: 25px;
+        width: 30px;
+        transition: 0.5s;
+        opacity: 0.5;
+    }
+
+    .link_icon:hover {
+        opacity: 1;
+    }
+
+    .social__list {
+        display: flex;
+    }
+
+    .social__item {
+        margin: 25px 15px 0;
+    }
+
+    .social__link_icon_greeting {
+        fill: #6fd1c6;
+    }
+
+    .social__link_icon_greeting {
+        fill: #37c8b5;
+    }

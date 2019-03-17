@@ -1,0 +1,163 @@
+extends ../template
+
+block variables
+    - var title = 'Мои работы'
+
+block content
+    .wrapper
+      .main.main_works
+        section#section_hero.section_hero.section_hero_works
+          .hero-head
+            .hero__social.social
+              ul.social__list
+                li.social__item
+                  a.social__link_icon.social__link_icon_hero(href='https://vk.com/id98812614', target='_blank')
+                    svg#vk.link_icon
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/images/svg/svg/symbols.svg#vk')
+                li.social__item
+                  a.social__link_icon(href='https://github.com/ZarinaMambetova', target='_blank')
+                    svg#github.link_icon
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/images/svg/svg/symbols.svg#github')
+                li.social__item
+                  a.social__link_icon(href='https://www.instagram.com/astra_zara/', target='_blank')
+                    svg#in.link_icon
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/images/svg/svg/symbols.svg#in')
+            nav.navigation
+              ul.navigation-list
+                li.navigation__item
+                  a.navigation__link(href='./my-works.html') Мои работы
+                li.navigation__item
+                  a.navigation__link(href='./blog.html', target='_blank') Блог
+                li.navigation__item
+                  a.navigation__link(href='./about.html', target='_blank') Обо мне
+                li.navigation__item
+                  a.navigation__link(href='./index.html', target='_blank') Авторизация
+              .hamburger
+                span.hamburger__line
+                span.hamburger__line
+                span.hamburger__line
+          .hero_info
+            .greeting__photo
+              img.greeting__image(src='assets/images/content/my-photo.jpg', alt='my-photo')
+            .name__title.name__title_hero Зарина Мамбетова
+            .hero__profession.form__block_title Личный сайт веб разработчика
+          #up.arrow-scroll.arrow-scroll_info
+            a.scroll__link(href='#')
+              svg#arrow_down.link_icon
+                use(xlink:href='assets/images/svg/svg/symbols.svg#arrow_down')
+        svg.triangles.triangles--works(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1200 108', preserveaspectratio='none')
+          polygon.triangle__left(points='0,0 0,108 601,108 601,105')
+          polygon.triangle__right(points='1200,0 1200,108 599,108 599,105')
+        section#section_works.section_works
+          .works-title
+            .about__left_icon
+              svg#works_header.link_icon.link_icon_about
+                use(xlink:href='assets/images/svg/svg/symbols.svg#works_header')
+            span.block-title.block-title_about МОИ РАБОТЫ
+          .slider
+            .slider-text
+              .slider-text__capt
+              .slider-text__tech
+              .slider-text__linkproj
+                a(href="#").slider-text__link Открыть проект
+            .slider-slide
+              .slider-slide__head
+                img(src="#").slider-slide__img
+              .slider-slide__slides
+                ul.slider-slide__list--left
+                ul.slider-slide__list--right
+        section.section-comments
+          .section-comments__bg
+            img(src="assets/images/bg/bg-water.png").section-comments__img
+          .works_block-title.block-title_comm
+            .about__left_icon
+              svg#about_header.link_icon.link_icon_about
+                use(xlink:href='assets/images/svg/svg/symbols.svg#about_header')
+            .block-title.block-title-subtitle.block-title-subtitle_works Что обо мне говорят
+          ul.comments__list
+            li.comments__item
+              .comments__text
+                p
+                  | Прохождение обучения веб-разработке в LoftSchool — это не просто так! 3 месяца только самых тяжелых испытаний
+                  | и бессонных ночей!
+              .comments__from
+                .greeting__photo.greeting__photo_comm
+                  img.greeting__image(src='assets/images/content/Dmitry.jpg', alt='photo')
+                .comments__autor
+                  .comments__autor_name Ковальчук Дмитрий
+                  .comments__autor_profession основатель школы
+            li.comments__item
+              .comments__text
+                p
+                  | Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+              .comments__from
+                .greeting__photo.greeting__photo_comm
+                  img.greeting__image(src='assets/images/content/Vova.jpg', alt='photo')
+                .comments__autor
+                  .comments__autor_name Сабанцев Владимир
+                  .comments__autor_profession преподаватель
+          .form__comments
+            .blure
+              .blure_bg
+            form.form.form-comments(action='form.php')
+              .error
+              .form__content.form__content_comments
+                .block-title.block-title_form СВЯЗАТЬСЯ СО МНОЙ
+                .form__row
+                  label.form__block
+                    input#email.form__input.form__input_comment.form__block_title.inp-text(type='text', name='email', placeholder='Имя')
+                .form__row
+                  label.form__block
+                    input#password.form__input.form__input_comment.form__block_title.inp-email(type='email', name='password', placeholder='Email')
+                .form__row.form__row_textarea
+                  label.form__block(for='comment')
+                    textarea#comment.form__input.form__input_comment.form__input_textarea.inp-textarea(name='comment', placeholder='Ваше сообщение')
+              .form__buttons.form__buttons_comments
+                input.form__button.form__button-main.form__block_title.inp-submit(type="submit", name='send')
+                input.form__button.form__button-enter.form__block_title.inp-reset(type="reset", name='clear', value="Очистить")
+          #down.arrow-scroll.arrow-scroll_comm.arrow-scroll_info
+            a.scroll__link(href='#')
+              svg#arrow_down.link_icon
+                use(xlink:href='assets/images/svg/svg/symbols.svg#arrow_down')
+      footer.works__footer.footer
+        .container.clearfix
+          .footer__row.footer_row_top
+            .footer__container
+              .footer__col.footer__col-left
+                nav.navigation.footer_navigation
+                  ul.navigation-list
+                    li.navigation__item
+                      a.navigation__link(href='./my-works.html') Мои работы
+                    li.navigation__item
+                      a.navigation__link(href='./blog.html', target='_self') Блог
+                    li.navigation__item
+                      a.navigation__link(href='./about.html', target='_blank') Обо мне
+                    li.navigation__item
+                      a.navigation__link(href='./index.html', target='_blank') Авторизация
+              .footer__col.footer__col-right
+                ul.social__list
+                  li.social__item
+                    a.social__link_icon.social__link_icon_hero(href='https://vk.com/id98812614', target='_blank')
+                      .link_icon_round
+                        svg#vk.link_icon
+                          use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/images/svg/svg/symbols.svg#vk')
+                  li.social__item
+                    a.social__link_icon(href='https://github.com/ZarinaMambetova', target='_blank')
+                      .link_icon_round
+                        svg#github.link_icon
+                          use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/images/svg/svg/symbols.svg#github')
+                  li.social__item
+                    a.social__link_icon(href='https://www.instagram.com/astra_zara/', target='_blank')
+                      .link_icon_round
+                        svg#in.link_icon
+                          use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/images/svg/svg/symbols.svg#in')
+          .footer__row
+            .footer__container.footer__container_down
+              .footer__col.footer__col-text
+                .footer__text.autor_text
+                  p
+                    | Я веб-разработчик из Астрахани, и этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool.
+              .footer__col.footer__col-right
+                .footer__text_margin_top
+                  p.footer__text.autor_text © Зарина Мамбетова | Создано с любовью в LoftSchool | 2017
+

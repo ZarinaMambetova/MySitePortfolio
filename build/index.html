@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Добро пожаловать</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/assets/styles/app.min.css">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="svg_l">
+        <svg class="svg">
+          <circle class="circle circle_one" fill="none" stroke-width="4" stroke-miterlimit="10" cx="72" cy="71.999" r="70"></circle>
+          <circle class="circle circle_two" fill="none" stroke-width="3.8938" stroke-miterlimit="10" cx="72" cy="72" r="55"></circle>
+          <circle class="circle circle_three" fill="none" stroke-width="4" stroke-miterlimit="10" cx="72" cy="72" r="40"></circle>
+        </svg><span class="text"></span>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="welcome">
+        <div class="parallax" id="parallax">
+          <div class="parallax__layer"><img class="parallax__layer-img parallax__layer-img--9" src="assets/images/parallax/layer9.png"></div>
+          <div class="parallax__layer"><img class="parallax__layer-img parallax__layer-img--8" src="assets/images/parallax/layer8.png"></div>
+          <div class="parallax__layer"><img class="parallax__layer-img parallax__layer-img--7" src="assets/images/parallax/layer7.png"></div>
+          <div class="parallax__layer"><img class="parallax__layer-img parallax__layer-img--6" src="assets/images/parallax/layer6.png"></div>
+          <div class="parallax__layer"><img class="parallax__layer-img parallax__layer-img--5" src="assets/images/parallax/layer5.png"></div>
+          <div class="parallax__layer"><img class="parallax__layer-img parallax__layer-img--4" src="assets/images/parallax/layer4.png"></div>
+          <div class="parallax__layer"><img class="parallax__layer-img parallax__layer-img--3" src="assets/images/parallax/layer3.png"></div>
+          <div class="parallax__layer"><img class="parallax__layer-img parallax__layer-img--2" src="assets/images/parallax/layer2.png"></div>
+          <div class="parallax__layer"><img class="parallax__layer-img parallax__layer-img--1" src="assets/images/parallax/layer1.png"></div>
+        </div>
+        <button class="button welcome__btn" type="button">Авторизоваться</button>
+        <div class="welcome-login">
+          <div class="greeting">
+            <div class="greeting_info">
+              <div class="greeting__photo"><img class="greeting__image" src="assets/images/content/my-photo.jpg" alt="my-photo"></div>
+              <div class="name__title">Зарина Мамбетова</div>
+              <div class="greeting__profession form__block_title">Личный сайт веб разработчика</div>
+              <div class="greeting__social social">
+                <ul class="social__list">
+                  <li class="social__item"><a class="social__link" href="https://vk.com/id98812614" target="_blank">
+                      <svg class="link_icon social__link_icon_greeting" id="vk">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/svg/svg/symbols.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="social__item"><a class="social__link" href="https://github.com/ZarinaMambetova" target="_blank">
+                      <svg class="link_icon social__link_icon_greeting" id="github">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/svg/svg/symbols.svg#github"></use>
+                      </svg></a></li>
+                  <li class="social__item"><a class="social__link" href="https://www.instagram.com/astra_zara/" target="_blank">
+                      <svg class="link_icon social__link_icon_greeting" id="in">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/svg/svg/symbols.svg#in"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <nav class="menu greeting_menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item_works"><a class="menu__link" href="./my-works.html">Мои работы</a></li>
+                <li class="menu__item menu__item_about"><a class="menu__link" href="./about.html">Обо мне</a></li>
+                <li class="menu__item menu__item_blog"><a class="menu__link" href="./blog.html">Блог</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="autorisation">
+            <form class="form form_welcome" action="form.php">
+              <div class="form__content">
+                <div class="block-title block-title_form">АВТОРИЗУЙТЕСЬ</div>
+                <div class="error"></div>
+                <div class="form__row">
+                  <label class="form__block">
+                    <input class="form__input form__block_title inp-email" id="email" type="email" name="email" placeholder="Логин">
+                    <div class="form__image">
+                      <svg class="form__icon" id="login">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/svg/svg/symbols.svg#login"></use>
+                      </svg>
+                    </div>
+                  </label>
+                </div>
+                <div class="form__row">
+                  <label class="form__block">
+                    <input class="form__input form__block_title inp-pass" id="password" type="password" name="password" placeholder="Пароль">
+                    <div class="form__image">
+                      <svg class="form__icon" id="password">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/svg/svg/symbols.svg#password"></use>
+                      </svg>
+                    </div>
+                  </label>
+                </div>
+                <div class="form__row">
+                  <input class="form__checkbox" id="robot_no" type="checkbox" value="robot_no" name="robot_no">
+                  <label class="form__block_title form__block_title-checkbox" for="robot_no">Я человек</label>
+                </div>
+                <div class="form__row">
+                  <div class="form__block_title form__block_title_question">Вы точно не робот?</div>
+                  <div class="form__row form__row_radio">
+                    <input class="form__radio" id="review-1" type="radio" value="yes" name="review" checked="">
+                    <label class="form__block_title form__block_title_radio" for="review-1">Да</label>
+                  </div>
+                  <div class="form__row form__row_radio">
+                    <input class="form__radio" id="review-2" type="radio" value="no" name="review">
+                    <label class="form__block_title form__block_title_radio" for="review-2">Не уверен</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__buttons">
+                <input class="form__button form__button-main form__block_title inp-reset" type="reset" name="main" value="На главную">
+                <input class="form__button form__button-enter form__block_title inp-submit" type="submit" name="enter" value="Войти">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="autor">
+          <div class="autor_text">© Зарина Мамбетова | создано с любовью в LoftSchool | 2017</div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/scripts/bundle.js"></script>
+  </body>
+</html>

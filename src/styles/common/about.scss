@@ -1,0 +1,128 @@
+.section_about {
+    display: grid;
+    grid-area: content;
+    grid-template-rows: 100%;
+    grid-template-areas: "about skills";
+    grid-template-columns: 50% 50%;
+    z-index: 500;
+    @include tablet {
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "about" "skills";
+        grid-template-columns: 100%;
+    }
+    @include phone {
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "about" "skills";
+        grid-template-columns: 100%;
+    }
+}
+
+.main_about {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 603px 1fr 1074px;
+    grid-template-areas: "hero" "content" "map";
+}
+
+.triangles {
+    width: 100%;
+    z-index: 50;
+    grid-area: hero;
+    align-self: end;
+}
+
+.triangles--about .triangle__left {
+    fill: #efeee9;
+}
+
+.triangles--about .triangle__right {
+    fill: #eeebdf;
+}
+
+.about__left {
+    background-color: #efeee9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__right {
+    background-color: #eeebdf;
+}
+
+.about__left_icon {
+    width: 333px;
+    height: 115px;
+}
+
+.link_icon_about {
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    &:hover {
+        opacity: 0.1;
+    }
+}
+
+.about__left-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-title_about {
+    position: absolute;
+    font-size: 63px;
+    margin-top: 28px;
+    @include tablet {
+        font-size: 49px;
+        margin-top: 46px;
+    }
+    @include phone {
+        font-size: 35px;
+        margin-top: 50px;
+    }
+}
+
+.user-description__image {
+    width: 392px;
+    color: #373e42;
+    @include phone {
+        width: 90%;
+    }
+}
+
+.block-title_about:before {
+    margin-bottom: 19px;
+}
+
+.block-title_about:after {
+    margin-bottom: 19px;
+}
+
+.user-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 31px;
+}
+
+.block-title-subtitle {
+    margin: 32px 0;
+    font-size: 35px;
+        @include tablet {
+            font-size: 30px;
+        }
+            @include phone {
+        font-size: 21px;
+
+    }
+}
+
+.user-description__text {
+    width: 430px;
+    @include phone {
+        width: 87%;
+        line-height: 1.6;
+    }
+}

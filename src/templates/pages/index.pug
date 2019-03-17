@@ -1,0 +1,108 @@
+extends ../template
+
+block variables
+    - var title = 'Добро пожаловать'
+
+block content
+  .preloader
+    .svg_l
+        svg.svg
+            circle(class="circle circle_one" fill="none" stroke-width="4" stroke-miterlimit="10" cx="72" cy="71.999" r="70")
+            circle(class="circle circle_two" fill="none" stroke-width="3.8938" stroke-miterlimit="10" cx="72" cy="72" r="55")
+            circle(class="circle circle_three" fill="none" stroke-width="4" stroke-miterlimit="10" cx="72" cy="72" r="40")
+        span.text
+                //- .paralax-mause__layer.layer10(style="background-image: url(assets/images/parallax/layer10.png);")
+                //- .paralax-mause__layer.layer9(style="background-image: url(assets/images/parallax/layer9.png);")
+                //- .paralax-mause__layer.layer8(style="background-image: url(assets/images/parallax/layer8.png);")
+                //- .paralax-mause__layer.layer7(style="background-image: url(assets/images/parallax/layer7.png);")
+                //- .paralax-mause__layer.layer6(style="background-image: url(assets/images/parallax/layer6.png);")
+                //- .paralax-mause__layer.layer5(style="background-image: url(assets/images/parallax/layer5.png);")
+                //- .paralax-mause__layer.layer4(style="background-image: url(assets/images/parallax/layer4.png);")
+                //- .paralax-mause__layer.layer3(style="background-image: url(assets/images/parallax/layer3.png);")
+                //- .paralax-mause__layer.layer2(style="background-image: url(assets/images/parallax/layer2.png);")
+                //- .paralax-mause__layer.layer1(style="background-image: url(assets/images/parallax/layer1.png);")
+  .wrapper
+    .welcome
+      #parallax.parallax
+        .parallax__layer
+          img.parallax__layer-img.parallax__layer-img--9(src='assets/images/parallax/layer9.png')
+        .parallax__layer
+          img.parallax__layer-img.parallax__layer-img--8(src='assets/images/parallax/layer8.png')
+        .parallax__layer
+          img.parallax__layer-img.parallax__layer-img--7(src='assets/images/parallax/layer7.png')
+        .parallax__layer
+          img.parallax__layer-img.parallax__layer-img--6(src='assets/images/parallax/layer6.png')
+        .parallax__layer
+          img.parallax__layer-img.parallax__layer-img--5(src='assets/images/parallax/layer5.png')
+        .parallax__layer
+          img.parallax__layer-img.parallax__layer-img--4(src='assets/images/parallax/layer4.png')
+        .parallax__layer
+          img.parallax__layer-img.parallax__layer-img--3(src='assets/images/parallax/layer3.png')
+        .parallax__layer
+          img.parallax__layer-img.parallax__layer-img--2(src='assets/images/parallax/layer2.png')
+        .parallax__layer
+          img.parallax__layer-img.parallax__layer-img--1(src='assets/images/parallax/layer1.png')
+      button.button.welcome__btn(type='button') Авторизоваться
+      .welcome-login
+        .greeting
+          .greeting_info
+            .greeting__photo
+              img.greeting__image(src='assets/images/content/my-photo.jpg', alt='my-photo')
+            .name__title Зарина Мамбетова
+            .greeting__profession.form__block_title Личный сайт веб разработчика
+            .greeting__social.social
+              ul.social__list
+                li.social__item
+                  a.social__link(href='https://vk.com/id98812614', target='_blank')
+                    svg#vk.link_icon.social__link_icon_greeting
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/images/svg/svg/symbols.svg#vk')
+                li.social__item
+                  a.social__link(href='https://github.com/ZarinaMambetova', target='_blank')
+                    svg#github.link_icon.social__link_icon_greeting
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/images/svg/svg/symbols.svg#github')
+                li.social__item
+                  a.social__link(href='https://www.instagram.com/astra_zara/', target='_blank')
+                    svg#in.link_icon.social__link_icon_greeting
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/images/svg/svg/symbols.svg#in')
+          nav.menu.greeting_menu
+            ul.menu__list
+              li.menu__item.menu__item_works
+                a.menu__link(href='./my-works.html') Мои работы
+              li.menu__item.menu__item_about
+                a.menu__link(href='./about.html') Обо мне
+              li.menu__item.menu__item_blog
+                a.menu__link(href='./blog.html') Блог
+        .autorisation
+          form.form.form_welcome(action='form.php')
+            .form__content
+              .block-title.block-title_form АВТОРИЗУЙТЕСЬ
+              .error
+              .form__row
+                label.form__block
+                  input#email.form__input.form__block_title.inp-email(type='email', name='email', placeholder='Логин')
+                  .form__image
+                    svg#login.form__icon
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/images/svg/svg/symbols.svg#login')
+              .form__row
+                label.form__block
+                  input#password.form__input.form__block_title.inp-pass(type='password', name='password', placeholder='Пароль')
+                  .form__image
+                    svg#password.form__icon
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/images/svg/svg/symbols.svg#password')
+              .form__row
+                input#robot_no.form__checkbox(type='checkbox', value='robot_no', name='robot_no')
+                label.form__block_title.form__block_title-checkbox(for='robot_no') Я человек
+              .form__row
+                .form__block_title.form__block_title_question Вы точно не робот?
+                .form__row.form__row_radio
+                  input#review-1.form__radio(type='radio', value='yes', name='review', checked='')
+                  label.form__block_title.form__block_title_radio(for='review-1') Да
+                .form__row.form__row_radio
+                  input#review-2.form__radio(type='radio', value='no', name='review')
+                  label.form__block_title.form__block_title_radio(for='review-2') Не уверен
+            .form__buttons
+              input.form__button.form__button-main.form__block_title.inp-reset(type="reset", name='main', value="На главную")
+              input.form__button.form__button-enter.form__block_title.inp-submit(type="submit", name='enter', value='Войти')
+      .autor
+        .autor_text © Зарина Мамбетова | создано с любовью в LoftSchool | 2017
+    

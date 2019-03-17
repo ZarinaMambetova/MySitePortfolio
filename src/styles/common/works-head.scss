@@ -1,0 +1,79 @@
+        .main_works {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 600px 50% 50%;
+            grid-template-areas: "hero_works" "works" "comments";
+        }
+
+        .works-title {
+            background-color: #faf8f0;
+        }
+
+        .triangles--works .triangle__left,
+        .triangle__right {
+            fill: #faf8f0;
+        }
+
+        .section_hero_works,
+        .triangles--works {
+            grid-area: hero_works;
+        }
+
+        .section_works {
+            grid-area: works;
+        }
+
+        .works-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 27px;
+        }
+
+        .block-title_works {
+            position: absolute;
+            font-size: 63px;
+        }
+
+        .block-title-subtitle_works {
+            margin: 30px 0;
+            font-size: 63px;
+            position: absolute;
+        }
+
+        .block-title-subtitle_works:before {
+            margin-top: 34px;
+            @include phone {
+                margin-top: 21px;
+            }
+        }
+
+        .block-title-subtitle_works:after {
+            margin-top: 34px;
+            @include phone {
+                margin-top: 21px;
+            }
+        }
+
+        .works_block-title {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .works_block-title .block-title-subtitle {
+            width: 355px;
+            align-self: center;
+            text-align: center;
+            display: flex;
+            @include tablet {
+                font-size: 35px;
+                width: 225px;
+                align-self: start;
+            }
+            @include phone {
+                font-size: 35px;
+                width: 225px;
+                align-self: start;
+            }
+        }

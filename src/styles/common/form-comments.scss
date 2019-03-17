@@ -1,0 +1,35 @@
+        .form__comments {
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .form-comments {
+            position: absolute;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // text-align: center;
+        }
+
+        .form__content_comments {
+            background: none;
+            opacity: 1;
+            padding: 21px 20px;
+        }
+
+        .form__input_comment {
+            border-radius: 5px;
+        }
+
+        .form__input_textarea {
+            resize: none;
+            height: 116px;
+        }
+
+        .form__row_textarea {
+            margin: 0;
+        }

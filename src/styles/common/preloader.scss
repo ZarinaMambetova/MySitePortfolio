@@ -1,0 +1,62 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg/bg-pre.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    z-index: 2;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+}
+
+.svg_l {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    transform-origin: 50% 50%;
+}
+
+.circle_one {
+    animation: rotate360 2s linear infinite;
+    opacity: 0.4;
+}
+
+.circle_two {
+    opacity: 0.7;
+    animation: rotate360 1.8s linear infinite;
+}
+
+.circle_three {
+    animation: rotate360 1.6s linear infinite;
+}
+
+.circle {
+    stroke: #fff;
+    stroke-dasharray: 200 302.6;
+}
+
+.text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
